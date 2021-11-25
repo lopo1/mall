@@ -1,0 +1,14 @@
+name: userflv
+host: 64676
+mysql:
+  host: '192.168.5.131'
+  port: '3306'
+  db: 'userflv'
+  user: 'root'
+  password: '123456'
+etcd:
+  host: 192.168.5.131
+  port: 12379
+es:
+  host: 192.168.5.131
+  port: 9200

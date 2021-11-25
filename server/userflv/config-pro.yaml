@@ -1,0 +1,7 @@
+host: '192.168.5.131'
+port: 8848
+namespace: 'd51d91b5-bbe1-4077-a04f-5493e3554713'
+user: 'nacos'
+password: 'nacos'
+dataid: 'userflv'
+group: 'mall'

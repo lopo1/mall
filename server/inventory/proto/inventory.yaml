@@ -1,0 +1,16 @@
+type: google.api.Service
+config_version: 3
+
+http:
+  rules:
+    - selector: Inventory.SetInv
+      post: /v1/inventory/create
+      body: "*"
+    - selector: Inventory.InvDetail
+      get: /v1/inventory/info
+    - selector: Inventory.Sell
+      put: /v1/inventory/sell
+      body: "*"
+    - selector: Inventory.Reback
+      put: /v1/inventory/reback
+      body: "*"

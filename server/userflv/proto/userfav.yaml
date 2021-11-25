@@ -1,0 +1,14 @@
+type: google.api.Service
+config_version: 3
+
+http:
+  rules:
+    - selector: UserFav.GetFavList
+      get: /v1/userop/favs
+    - selector: UserFav.AddUserFav
+      post: /v1/userop/fav
+      body: "*"
+    - selector: UserFav.DeleteUserFav
+      delete: /v1/userop/fav
+    - selector: UserFav.GetUserFavDetail
+      get: /v1/userop/fav

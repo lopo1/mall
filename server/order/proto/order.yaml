@@ -1,0 +1,25 @@
+type: google.api.Service
+config_version: 3
+
+http:
+  rules:
+    - selector: Order.CartItemList
+      get: /v1/order/carts
+    - selector: Order.CreateCartItem
+      post: /v1/order/cart
+      body: "*"
+    - selector: Order.UpdateCartItem
+      put: /v1/order/cart
+      body: "*"
+    - selector: Order.DeleteCartItem
+      delete: /v1/order/cart
+    - selector: Order.CreateOrder
+      post: /v1/order/order
+      body: "*"
+    - selector: Order.OrderList
+      get: /v1/order/orders
+    - selector: Order.OrderDetail
+      get: /v1/order/order
+    - selector: Order.UpdateOrderStatus
+      put: /v1/order/order
+      body: "*"

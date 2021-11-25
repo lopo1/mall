@@ -1,0 +1,63 @@
+type: google.api.Service
+config_version: 3
+
+http:
+  rules:
+    - selector: Goods.GoodsList
+      get: /v1/goods/list
+    - selector: Goods.BatchGetGoods
+      get: /v1/batchGoods
+    - selector: Goods.CreateGoods
+      post: /v1/goods/create
+      body: "*"
+    - selector: Goods.DeleteGoods
+      delete: /v1/goods
+    - selector: Goods.UpdateGoods
+      put: /v1/goods
+      body: "*"
+    - selector: Goods.GetGoodsDetail
+      get: /v1/goods/info/{id}
+    - selector: Goods.GetAllCategorysList
+      get: /v1/goods/getAllCategorysList
+    - selector: Goods.GetSubCategory
+      get: /v1/goods/getSubCategory
+    - selector: Goods.CreateCategory
+      post: /v1/goods/createCategory
+      body: "*"
+    - selector: Goods.DeleteCategory
+      delete: /v1/goods/category
+    - selector: Goods.UpdateCategory
+      put: /v1/goods/category
+      body: "*"
+    - selector: Goods.BrandList
+      get: /v1/goods/brands
+    - selector: Goods.CreateBrand
+      post: /v1/goods/brand
+      body: "*"
+    - selector: Goods.DeleteBrand
+      delete: /v1/goods/brand
+    - selector: Goods.UpdateBrand
+      put: /v1/goods/brand
+      body: "*"
+    - selector: Goods.BannerList
+      get: /v1/goods/banners
+    - selector: Goods.CreateBanner
+      post: /v1/goods/banners
+      body: "*"
+    - selector: Goods.DeleteBanner
+      delete: /v1/goods/banners
+    - selector: Goods.UpdateBanner
+      put: /v1/goods/banners
+      body: "*"
+    - selector: Goods.CategoryBrandList
+      get: /v1/goods/categoryBrandList
+    - selector: Goods.GetCategoryBrandList
+      get: /v1/goods/getCategoryBrandList
+    - selector: Goods.CreateCategoryBrand
+      post: /v1/goods/categoryBrand
+      body: "*"
+    - selector: Goods.DeleteCategoryBrand
+      delete: /v1/goods/categoryBrand
+    - selector: Goods.UpdateCategoryBrand
+      put: /v1/goods/categoryBrand
+      body: "*"

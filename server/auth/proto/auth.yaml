@@ -1,0 +1,24 @@
+type: google.api.Service
+config_version: 3
+
+http:
+  rules:
+    - selector: auth.User.GetUserList
+      get: /user/list
+    - selector: auth.User.Login
+      post: /user/login
+      body: "*"
+    - selector: auth.User.CreateUser
+      post: /user/createUser
+      body: "*"
+    - selector: auth.User.GetUserByMobile
+      get: /user/getUserByMobile/{mobile}
+    - selector: auth.User.GetUserById
+      get: /user/getUserById/{id}
+    - selector: auth.User.UpdateUser
+      post: /user/UpdateUser
+      body: "*"
+    - selector: auth.User.CheckPassWord
+      post: /user/CheckPassWord
+      body: "*"
+
